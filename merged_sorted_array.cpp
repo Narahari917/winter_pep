@@ -20,17 +20,26 @@ void merge(vector<int>& nums1, int m, vector<int>& nums2, int n) {
         }
         
     }
+    void display(vector <int> &nums1){
+        for(int i=0;i<nums1.size();i++){
+            cout<<nums1[i]<<" ";
+        }
+    }
 int main(){
-    int m,n;
-    cin>>m>>n;
-    vector<int> nums1(m);
-    vector<int> nums2(n);
-    for(int i=0;i<m;i++){
-        cin>>nums1[i];
-    }
-    for(int i=0;i<n;i++){
-        cin>>nums2[i];
-    }
+    int m=3,n=3;
+    // cin>>m>>n;
+    vector<int> nums1={1,2,3,0,0,0};
+    vector<int> nums2={4,5,6};
+    // for(int i=0;i<m;i++){
+    //     cin>>nums1[i];
+    // }
+    // for(int i=0;i<n;i++){
+    //     cin>>nums2[i];
+    // }
     merge(nums1,m,nums2,n);
+    for(int i=0;i<nums1.size();i++){
+        cout<<nums1[i]<<" ";
+    }
+    // display(nums1);
     return 0;
 }
